@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  nav {
+    border: none;
+    border-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  }
+}

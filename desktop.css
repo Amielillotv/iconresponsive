@@ -1,0 +1,165 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+header {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 200px;
+  margin-right: 10px;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0056b3;
+  border: 2px solid #0056b3;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 45px;
+  font-size: 35px;
+  color: white;
+  background-color: #28567a;
+  text-align: center;
+  border-radius: 5px;
+  display: none; /* Visible solo en pantallas pequeñas */
+}
+
+/* Estilos para el cuerpo */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-content {
+  max-width: 600px;
+}
+
+.text-content h1 {
+  color: #f39c12;
+  font-size: 32px;
+}
+
+.text-content h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  margin-bottom: 20px;
+}
+
+.text-content button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-content img {
+  width: 400px;
+}
+
+footer {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .footer-content {
+  font-size: 16px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block; /* Mostrar el ícono de menú */
+  }
+
+  nav ul {
+    display: none; /* Ocultar el menú inicialmente */
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.active { /* Menú visible cuando se añade la clase active */
+    display: flex;
+  }
+}

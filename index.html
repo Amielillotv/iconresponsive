@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pull Request</title>
+    <script src="https://kit.fontawesome.com/d188054eba.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="desktop.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/pullrequest-logo.svg" alt="PullRequest Logo">
+        </div>
+
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <br><br>
+    <nav>
+      <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Empresa</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Ubicación</a></li>
+          <li><a href="#">Contáctanos</a></li>
+      </ul>
+  </nav>
+</article>
+
+    <main>
+        <section class="content">
+            <div class="text-content">
+                <h1>Creacion de paginas web</h1>
+                <h2>Curso básico de HTML5 y CSS3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptates hic animi praesentium nulla cumque aliquam optio obcaecati alias, quos voluptatem officia ullam adipisci assumenda architecto ipsa voluptate nihil totam.</p>
+                <button>ver</button>
+            </div>
+            <div class="image-content">
+                <img src="imagenes/foto_pullrequest.svg" alt="Personas trabajando en una página web">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span>@hectorcetina</span>
+        </div>
+    </footer>
+    
+
+    <script>
+      const menuIcon = document.querySelector('.menu-icon');
+      const navMenu = document.querySelector('nav ul');
+    
+      menuIcon.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    </script>
+    
+</body>
+</html>
